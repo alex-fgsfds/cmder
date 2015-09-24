@@ -17,9 +17,7 @@ The main advantage of Cmder is portability. It is designed to be totally self-co
 1. Download the latest release
 2. Extract
 3. (optional) Place your own executable files into the `bin` folder to be injected into your PATH.
-4. Run cmder
-
-*(There will be a version with installer)*
+4. Run Cmder
 
 ## Integration
 
@@ -38,18 +36,18 @@ In a file explorer window right click in or on a directory to see "Cmder Here" i
 
 ### Tab manipulation
 
-* `Ctrl + t` : new tab dialog (maybe you want to open cmd as admin?)
-* `Ctrl + w` : close tab
-* `Ctrl + d` : close tab (if pressed on empty command)
-* `Shift + alt + number` : fast new tab: `1` - CMD, `2` - Powershell `*` - More to come
-* `Alt + enter`: Fullscreen
+* <kbd>Ctrl</kbd> + <kbd>T</kbd> : new tab dialog (maybe you want to open cmd as admin?)
+* <kbd>Ctrl</kbd> + <kbd>W</kbd> : close tab
+* <kbd>Ctrl</kbd> + <kbd>D</kbd> : close tab (if pressed on empty command)
+* <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>#Number</kbd> : fast new tab: `1` - CMD, `2` - Powershell `*` - More to come
+* <kbd>Alt</kbd> + <kbd>Enter</kbd>: Fullscreen
 
 ### Shell
 
-* `Shift + Up` : Traverse up in directory structure (lovely feature!)
-* `End, Home, Ctrl` : Traversing text with as usual on Windows
-* `Ctrl + r` : History search
-* `Shift + mouse` : Select and copy text from buffer
+* <kbd>Shift</kbd> + <kbd>Up</kbd> : Traverse up in directory structure (lovely feature!)
+* <kbd>End</kbd>, <kbd>Home</kbd>, <kbd>Ctrl</kbd> : Traversing text with as usual on Windows
+* <kbd>Ctrl</kbd> + <kbd>R</kbd> : History search
+* <kbd>Shift</kbd> + Mouse : Select and copy text from buffer
 
 (Some shortcuts are not yet documented, thought they exist, please add them here)
 
