@@ -46,6 +46,9 @@ Param(
     # Launcher folder location
     [string]$launcher = "..\launcher",
 
+    # Config folder location
+    [string]$config = "..\config",
+
     # Include git with the package build
     [switch]$Full
 )
@@ -60,6 +63,17 @@ $sources = Get-Content $sourcesPath | Out-String | Convertfrom-Json
 Ensure-Exists $sourcesPath
 Ensure-Executable "7z"
 New-Item -Type Directory -Path (Join-Path $saveTo "/tmp/") -ErrorAction SilentlyContinue >$null
+
+# Preserve modified (by user) ConEmu setting file
+if ($config -ne "") {
+    $ConEmuXml = Join-Path $saveTo "conemu-maximus5\ConEmu.xml"
+    if (Test-Path $ConEmuXml -pathType leaf) {
+        $ConEmuXmlSave = Join-Path $config "ConEmu.xml"
+        Write-Verbose "Backup '$ConEmuXml' to '$ConEmuXmlSave'"
+        Copy-Item $ConEmuXml $ConEmuXmlSave
+    } else { $ConEmuXml = "" }
+} else { $ConEmuXml = "" }
+
 
 foreach ($s in $sources) {
     if($Full -eq $false -and $s.name -eq "msysgit"){
@@ -81,6 +95,12 @@ foreach ($s in $sources) {
     }
     # Write current version to .cmderver file, for later.
     "$($s.version)" | Out-File "$($s.name)/.cmderver"
+}
+
+# Restore user configuration
+if ($ConEmuXml -ne "") {
+    Write-Verbose "Restore '$ConEmuXmlSave' to '$ConEmuXml'"
+    Copy-Item $ConEmuXmlSave $ConEmuXml
 }
 
 Pop-Location
