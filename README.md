@@ -4,7 +4,7 @@
 
 The latest release can always be found **[here](https://github.com/bliker/cmder/releases/).**
 
-Cmder is a **software package** created out of pure frustration over absence of usable console emulator on Windows. It is based on [ConEmu](https://conemu.github.io/) with *major* config overhaul. Monokai color scheme, amazing [clink](https://github.com/mridgers/clink) and custom prompt layout.
+Cmder is a **software package** created out of pure frustration over absence of usable console emulator on Windows. It is based on [ConEmu](https://conemu.github.io/) with *major* config overhaul, adds a Monokai color scheme, amazing [clink](https://github.com/mridgers/clink) and a custom prompt layout.
 
 ![Cmder Screenshot](http://i.imgur.com/g1nNf0I.png)
 
@@ -36,10 +36,10 @@ In a file explorer window right click in or on a directory to see "Cmder Here" i
 
 ### Tab manipulation
 
-* <kbd>Ctrl</kbd> + <kbd>T</kbd> : new tab dialog (maybe you want to open cmd as admin?)
-* <kbd>Ctrl</kbd> + <kbd>W</kbd> : close tab
-* <kbd>Ctrl</kbd> + <kbd>D</kbd> : close tab (if pressed on empty command)
-* <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>#Number</kbd> : fast new tab: `1` - CMD, `2` - Powershell `*` - More to come
+* <kbd>Ctrl</kbd> + <kbd>T</kbd> : New tab dialog (maybe you want to open cmd as admin?)
+* <kbd>Ctrl</kbd> + <kbd>W</kbd> : Close tab
+* <kbd>Ctrl</kbd> + <kbd>D</kbd> : Close tab (if pressed on empty command)
+* <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>#Number</kbd> : Fast new tab: <kbd>1</kbd> - CMD, <kbd>2</kbd> - PowerShell
 * <kbd>Alt</kbd> + <kbd>Enter</kbd>: Fullscreen
 
 ### Shell
@@ -65,11 +65,6 @@ All aliases will be saved in `/config/aliases` file
 To start SSH agent simply call `start-ssh-agent`, which is in the `vendor/git-for-windows/cmd` folder.
 
 If you want to run SSH agent on startup, uncomment the line in `/vendor/init.bat`so it says `@call "%GIT_INSTALL_ROOT%/cmd/start-ssh-agent.cmd"`.
-
-## Todo
-
-1. Git Bash
-2. Check for clink and git before injecting them (Sort of done)
 
 ## License
 
