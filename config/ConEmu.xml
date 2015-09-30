@@ -628,7 +628,7 @@
 			<value name="StatusBar.Hide.Dpi" type="hex" data="01"/>
 			<value name="TabFlashChanged" type="dword" data="00000008"/>
 			<value name="TabModifiedSuffix" type="string" data="[*]"/>
-			<key name="HotKeys" modified="2015-05-17 22:10:27" build="150513">
+			<key name="HotKeys" modified="2015-09-30 19:27:37" build="150913">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -648,8 +648,8 @@
 				<value name="Multi.NewConsolePopup" type="dword" data="00000000"/>
 				<value name="Multi.NewConsolePopup2" type="dword" data="00000000"/>
 				<value name="Multi.NewAttach" type="dword" data="00000000"/>
-				<value name="Multi.NewSplitV" type="dword" data="00000000"/>
-				<value name="Multi.NewSplitH" type="dword" data="00000000"/>
+				<value name="Multi.NewSplitV" type="dword" data="00101128"/>
+				<value name="Multi.NewSplitH" type="dword" data="00101127"/>
 				<value name="Multi.SplitMaximize" type="dword" data="00005d0d"/>
 				<value name="Multi.SplitSizeVU" type="dword" data="00105d26"/>
 				<value name="Multi.SplitSizeVD" type="dword" data="00105d28"/>
@@ -708,7 +708,7 @@
 				<value name="TransparencyDec" type="dword" data="00000000"/>
 				<value name="Key.TabMenu" type="dword" data="00000000"/>
 				<value name="Key.TabMenu2" type="dword" data="00000000"/>
-				<value name="Key.Maximize" type="dword" data="00000000"/>
+				<value name="Key.Maximize" type="dword" data="8080807a"/>
 				<value name="Key.MaximizeWidth" type="dword" data="00000000"/>
 				<value name="Key.MaximizeHeight" type="dword" data="00000000"/>
 				<value name="Key.TileToLeft" type="dword" data="00000000"/>
@@ -720,8 +720,8 @@
 				<value name="Key.SysMenu2" type="dword" data="00001102"/>
 				<value name="Key.BufUp" type="dword" data="00001126"/>
 				<value name="Key.BufDn" type="dword" data="00001128"/>
-				<value name="Key.BufPgUp" type="dword" data="00001121"/>
-				<value name="Key.BufPgDn" type="dword" data="00001122"/>
+				<value name="Key.BufPgUp" type="dword" data="80808021"/>
+				<value name="Key.BufPgDn" type="dword" data="80808022"/>
 				<value name="Key.BufHfPgUp" type="dword" data="00005d21"/>
 				<value name="Key.BufHfPgDn" type="dword" data="00005d22"/>
 				<value name="Key.BufTop" type="dword" data="00005d24"/>
@@ -743,10 +743,10 @@
 				<value name="KeyMacro04.Text" type="string" data="FontSetSize(1,-2)"/>
 				<value name="KeyMacro05" type="dword" data="00a01233"/>
 				<value name="KeyMacro05.Text" type="string" data="Task(&quot;PowerShell as Admin&quot;)"/>
-				<value name="KeyMacro06" type="dword" data="00000000"/>
-				<value name="KeyMacro06.Text" type="string" data=""/>
-				<value name="KeyMacro07" type="dword" data="00000000"/>
-				<value name="KeyMacro07.Text" type="string" data=""/>
+				<value name="KeyMacro06" type="dword" data="00001026"/>
+				<value name="KeyMacro06.Text" type="string" data="Print(&quot;pushd ..\n&quot;)"/>
+				<value name="KeyMacro07" type="dword" data="00001028"/>
+				<value name="KeyMacro07.Text" type="string" data="Print(&quot;popd\n&quot;)"/>
 				<value name="KeyMacro08" type="dword" data="00000000"/>
 				<value name="KeyMacro08.Text" type="string" data=""/>
 				<value name="KeyMacro09" type="dword" data="00000000"/>
@@ -805,6 +805,7 @@
 				<value name="DndLKey" type="hex" data="00"/>
 				<value name="DndRKey" type="hex" data="a2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
+				<value name="Multi.Unfasten" type="dword" data="00000000"/>
 			</key>
 		</key>
 	</key>
